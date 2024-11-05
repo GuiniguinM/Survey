@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Twisted-Wonderland Survey</h1>
+    <p id="description">This is a fanmade survey form. Thank you for participating.</p>
+
+    <form action="" id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" required placeholder="Enter Your Name">
+        </div>
+        <br>
+        <div>
+            <label for="" id="email-label">Email:</label>
+            <input type="email" id="email" required placeholder="Enter Your Email">
+        </div>
+        <br>
+        <div>
+            <label for="" id="number-label">Age:</label>
+            <input type="number" id="number" required min="15" max="99" placeholder="Age">
+        </div>
+        <br>
+        <div>
+            <legend>Pick Your Favorite Dorm</legend>
+            <select name="dorm" id="dropdown" required>
+                <option disabled selected value>Select Dorm</option>
+                <option value="heartsylabyul">Heartsylabyul</option>
+                <option value="savanaclaw">Savanaclaw</option>
+                <option value="octavinelle">Octavinelle</option>
+                <option value="scarabia">Scarabia</option>
+                <option value="pomefiore">Pomefiore</option>
+                <option value="ignihyde">Ignihyde</option>
+                <option value="diasomnia">Diasomnia</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <legend>Pick Your Favorite Dorm Leader</legend>
+            <select name="leader" id="dropdown" required>
+                <option disabled selected value>Select Your Choice</option>
+                <option value="riddle">Riddle Rosehearts</option>
+                <option value="leona">Leona Kingscholar</option>
+                <option value="azul">Azul Ashengrotto</option>
+                <option value="kalim">Kalim Al-Asim</option>
+                <option value="vil">Vil Schoenheit</option>
+                <option value="idia">Idia Shroud</option>
+                <option value="malleus">Malleus Draconia</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <legend>Pick Your Favorite Vise Dorm Leader</legend>
+            <select name="leader" id="dropdown" required>
+                <option disabled selected value>Select Your Choice</option>
+                <option value="riddle">Trey Clover</option>
+                <option value="leona">Ruggie Bucchi</option>
+                <option value="azul">Jade Leech</option>
+                <option value="kalim">Jamil Viper</option>
+                <option value="vil">Rook Hunt</option>
+                <option value="idia">Ortho Shroud</option>
+                <option value="malleus">Lilia Vanrouge</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <legend>Do You Like Crowley?</legend>
+            <label>
+              <input value="no" type="radio" name="fav" required>No! Absolutely Not!
+            </label>
+            
+            <label>
+              <input value="maybe" type="radio" name="fav">Meehh, just mehh
+            </label>
+            
+            <label
+              ><input value="yes" type="radio" name="fav">Yes, he is fun.
+            </label>
+        </div>
+        <br>
+        <div class="checkbox-group">
+            <legend>Pick You Favorite Events</legend> 
+            <span>Check as Many (en server only)</span>
+            <br>
+            <fieldset>
+                <input type="checkbox" value="plmm" required>Playful Land’s Miraculous Marionettes
+                <input type="checkbox" value="eths">Encore The Harveston Sledathon
+                <input type="checkbox" value="cots">Cloudcalling on the Savanna
+                <input type="checkbox" value="stt">Stitch's Tropical Turbulence
+                <input type="checkbox" value="egm">Encore Glorious Masquerade
+                <input type="checkbox" value="eafs">Encore A Firelit Sky
+                <input type="checkbox" value="eth">Encore Twisted Halloween
+                <input type="checkbox" value="cv">Camp Vargas 2: The Art of Survival
+                <input type="checkbox" value="etpb">Encore The Phantom Bride
+                <input type="checkbox" value="fgr">Fairy Gala Remix
+            </fieldset>
+        </div>
+        <div>
+            <p>Enter Your UM of Choice</p>
+            <textarea name="um" id="Um" required></textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
